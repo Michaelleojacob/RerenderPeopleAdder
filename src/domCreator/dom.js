@@ -21,7 +21,7 @@ export default function dom(obj) {
         break;
       case 'children':
         if (!Array.isArray(obj.children)) return console.log(`children must be an array`);
-        obj.children.map((child) => element.appendChild(dom(child)));
+        obj.children.map((child) => element.appendChild(child));
         break;
       default:
     }
