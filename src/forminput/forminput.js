@@ -1,5 +1,4 @@
 import cached from '../queryObj/queryObj';
-import renderCards from '../renderCards/renderCards';
 import peopleArr from '../peopleObj/peopleObj';
 
 function handleSubmit() {
@@ -9,7 +8,6 @@ function handleSubmit() {
   input.value = '';
   //* on submit add the person to the array and re render
   peopleArr.addPerson(val);
-  renderCards();
 }
 
 function getFormInput() {
