@@ -2,15 +2,13 @@ import './style.css';
 import preventSubmit from './forminput/preventSubmit';
 import getFormInput from './forminput/forminput';
 import peopleArr from './peopleObj/peopleObj';
-import personCard from './personCard/personCard';
 
 preventSubmit();
 getFormInput();
-peopleArr.logPeopleArr();
 
-const thing = personCard('mike');
-const container = document.querySelector('#container');
-container.appendChild(thing);
+peopleArr.addPerson('mike');
+peopleArr.addPerson('sam');
+peopleArr.addPerson('anya');
 
 //* on page load
 // if array is not empty, we want to render array
