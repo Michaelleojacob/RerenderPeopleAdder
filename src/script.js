@@ -1,13 +1,24 @@
 import './style.css';
-import makeForm from './forminput/forminput';
-import definePerson from './definePerson/definePerson';
+import preventSubmit from './forminput/preventSubmit';
+import peopleArr from './peopleObj/peopleObj';
 
-makeForm();
+preventSubmit();
 
-function forTesting() {
-  const container = document.querySelector('#container');
-  container.appendChild(definePerson({ name: 'mike' }));
-  container.appendChild(definePerson({ name: 'sam' }));
-  container.appendChild(definePerson({ name: 'david' }));
-}
-forTesting();
+peopleArr.logPeopleArr();
+peopleArr.addPerson('mike');
+peopleArr.logPeopleArr();
+peopleArr.addPerson('lol');
+peopleArr.logPeopleArr();
+peopleArr.removePerson('lol');
+peopleArr.logPeopleArr();
+
+//* on page load
+// if array is not empty, we want to render array
+
+//* add person
+// people counter should update
+// people holder thing should update
+
+//* delete person
+// people counter should update
+// people holder thing should update

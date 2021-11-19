@@ -5,12 +5,12 @@ function cacheContainer() {
 
 function cacheForm() {
   const parent = cacheContainer();
-  const obj = {
+  return {
     form: parent.querySelector('#form'),
     input: parent.querySelector('#input'),
     peoplecontainer: parent.querySelector('#peoplecontainer'),
+    counter: parent.querySelector('#counter'),
   };
-  return obj;
 }
 
 const cached = cacheForm();
